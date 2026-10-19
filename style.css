@@ -1,0 +1,18 @@
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px 15px;
+    display: inline-flex;
+    gap: 15px;
+    align-items: center;
+}
+
+fieldset legend {
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+fieldset label {
+    cursor: pointer;
+    font-weight: normal;
+}

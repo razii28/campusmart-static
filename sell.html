@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="List your second-hand items for sale on CampusMart.">
+    <title>Sell an Item – CampusMart</title>
+    <link rel="stylesheet"
+          href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><strong>CampusMart</strong></a>
+        <nav aria-label="Main">
+            <ul>
+                <li><a href="index.html">Browse</a></li>
+                <li><a href="sell.html">Sell an item</a></li>
+                <li><a href="index.html#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Sell an Item</h1>
+        <p>Fill in the details below to create your listing.</p>
+
+        <form action="#"
+              method="post">
+            <p>
+                <label for="title">Title</label>
+                <input type="text"
+                       id="title"
+                       name="title"
+                       autocomplete="off"
+                       placeholder="e.g. Calculus textbook"
+                       required
+                       minlength="5"
+                       maxlength="100"
+                       pattern=".*[A-Za-z].*"
+                       title="Title must contain at least one letter">
+            </p>
+
+            <p>
+                <label for="category">Category</label>
+                <select id="category"
+                        name="category"
+                        required>
+                    <option value="">Select a category</option>
+                    <option value="books">Books</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="furniture">Furniture</option>
+                    <option value="clothing">Clothing</option>
+                    <option value="stationery">Stationery</option>
+                </select>
+            </p>
+
+            <fieldset>
+                <legend>Condition</legend>
+                <label><input type="radio"
+                           name="condition"
+                           value="NEW"
+                           required /> New</label>
+                <label><input type="radio"
+                           name="condition"
+                           value="LIKE_NEW" /> Like new</label>
+                <label><input type="radio"
+                           name="condition"
+                           value="GOOD" /> Good</label>
+                <label><input type="radio"
+                           name="condition"
+                           value="FAIR" /> Fair</label>
+            </fieldset>
+
+            <p>
+                <label for="price">Price in Rs</label>
+                <input id="price"
+                       name="price"
+                       type="number"
+                       required
+                       min="50">
+            </p>
+            <p>
+                <label for="description">Description</label>
+                <textarea id="description"
+                          name="description"
+                          placeholder="Describe the item's condition and details"
+                          required
+                          minlength="20"></textarea>
+            </p>
+
+            <p>
+                <label for="photo">Photo</label>
+                <input id="photo"
+                       name="photo"
+                       type="file"
+                       accept="image/png, image/jpeg, image/webp">
+            </p>
+
+            <p>
+                <label>
+                    <input type="checkbox"
+                           name="ownership"
+                           required>
+                    I confirm this item is mine to sell
+                </label>
+            </p>
+
+            <button type="submit">Publish listing</button>
+        </form>
+
+        <section>
+            <h2>Selling fees</h2>
+            <table>
+                <caption>CampusMart selling fees</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Listing type</th>
+                        <th scope="col">Fee</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Standard listing</td>
+                        <td> Free</td>
+                    </tr>
+                    <tr>
+                        <td>Featured listing</td>
+                        <td> Rs 500</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CampusMart ·
+            <a href="mailto:help@campusmart.pk">help@campusmart.pk</a>
+        </p>
+    </footer>
+</body>
+
+</html>
