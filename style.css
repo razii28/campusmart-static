@@ -1,18 +1,32 @@
-fieldset {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 10px 15px;
-    display: inline-flex;
-    gap: 15px;
+.fiza{
+
+
+    display: flex;
+    gap: 1.25rem;
     align-items: center;
+    list-style: circle;
+    padding: 30;
+  }
+
+  .kuchbhi{
+    display: flex;
+    justify-content: space-between; /* logo left, nav right */
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-bottom: 2px solid #17bac5;
+    position: sticky; 
+    top: 0;
+    background: rgb(253, 250, 250);
+
+
+  }
+
+.fiza a{
+
+    color: black;
 }
 
-fieldset legend {
-    font-weight: bold;
-    padding: 0 5px;
-}
+#min {
 
-fieldset label {
-    cursor: pointer;
-    font-weight: normal;
+    color: blueviolet;
 }
